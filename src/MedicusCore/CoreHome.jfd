@@ -1,0 +1,566 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+			name: "masterPanel"
+			"foreground": &Color0 new java.awt.Color( 51, 51, 51, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp panelWelcome::l:::x, comp panelLoginFields::t:::x, comp panelLoginBottom::t:::x}, space :::p}}"
+				"$verticalGroup": "par l {seq t {space :::p, comp panelWelcome:::::x, space :::p, comp panelLoginFields:::p::p, space :::p, comp panelLoginBottom:::p:78:p, space :::p}}"
+			} ) {
+				name: "panelMain"
+				"foreground": #Color0
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :163:163:p, par t {comp field_Username:::::x, comp field_Password:::::x}, space :p:163:p}}"
+					"$verticalGroup": "par l {seq t {comp field_Username::::40:x, space :p:18:p, comp field_Password::::40:x, space :p:7:p}}"
+				} ) {
+					name: "panelLoginFields"
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "field_Username"
+						"horizontalAlignment": 0
+						"toolTipText": "Enter Username"
+					} )
+					add( new FormComponent( "javax.swing.JPasswordField" ) {
+						name: "field_Password"
+						"toolTipText": "Enter Password"
+						"horizontalAlignment": 0
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :p:162:p, comp text_Welcome::::177:x, space :p:164:p}}"
+					"$verticalGroup": "par l {seq {space :p:110:p, comp text_Welcome:::::x, space :p:45:p}}"
+				} ) {
+					name: "panelWelcome"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "text_Welcome"
+						"text": "Welcome"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+						"horizontalAlignment": 0
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "fillx,rtl,insets 20 90 0 90,hidemode 3,gap 5 5"
+					"$columnConstraints": "[fill][fill]"
+					"$rowConstraints": "[fill]"
+				} ) {
+					name: "panelLoginBottom"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_Login"
+						"text": "LOGIN"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_NewCreate"
+						"text": "New User?"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 0"
+					} )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "card6"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {seq l {par l {comp field_CPass::l:::x, comp field_CUsername::l:::x, comp btn_CreateAcc::l:::x, seq {comp text_CUsername2:::p::p, space :0:0:x}, seq l {comp field_dobM:::p:66:p, space u:::p, comp field_dobD:::p:66:p, space u:::p, comp field_dobY:::::x}}, space :::p, par l {comp field_Scroll:::::x, comp btn_BackToLogin::l:::x, comp btn_ResetFields::l:::x}}, seq {par l {comp text_CPass:::p::p, seq {comp text_CUsername:::p::p, space :p:263:p, comp text_WhoAreYou:::p::p}, seq {par l {comp field_FName::l:p:236:p, comp text_FName::l:p::p}, space :::p, par l {comp text_LName:::p::p, comp field_LName:::p:226:p}}}, space :0:0:x}}, space :::p}}"
+				"$verticalGroup": "par l {seq l {par l {seq {space :p:22:p, par b {comp text_FName::b:p::p, comp text_LName::b:p::p}, space :::p, par b {comp field_FName::b:p:40:p, comp field_LName::b:p:40:p}, space u:::p, par b {comp text_CUsername::b:p::p, comp text_WhoAreYou::b:p::p}, space :::p, par l {comp field_CUsername:::p:40:p, comp field_Scroll:::::x}, space u:::p, comp text_CPass:::p::p, space :::p, comp field_CPass:::p:40:p, space :p:75:p}, seq {space :::x, comp text_CUsername2:::p::p, space :::p, par b {comp field_dobM::b:p:40:p, comp field_dobD::b:p:40:p, comp field_dobY::b:p:40:p}}}, comp btn_ResetFields:::p::p, space :::p, par b {comp btn_BackToLogin::b:p::p, comp btn_CreateAcc::b:p::p}, space ::12:x}}"
+			} ) {
+				name: "panelAccCreate"
+				"foreground": new java.awt.Color( 51, 51, 51, 255 )
+				"preferredSize": new java.awt.Dimension( 480, 406 )
+				"maximumSize": new java.awt.Dimension( 32779, 32987 )
+				"minimumSize": new java.awt.Dimension( 434, 379 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_FName"
+					"text": "First Name"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "field_FName"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "field_LName"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "field_CUsername"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_CUsername"
+					"text": "Username"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_LName"
+					"text": "Last Name"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_CPass"
+					"text": "Password"
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "field_CPass"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "field_Scroll"
+					auxiliary() {
+						"JavaCodeGenerator.preCreateCode": "String [] fieldStrings = {\"Admin\", \"User\", \"Provider\", \"Physician\"};\n"
+						"JavaCodeGenerator.customCreateCode": "new JComboBox(fieldStrings);"
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_WhoAreYou"
+					"text": "Who are you?"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn_CreateAcc"
+					"text": "CREATE"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn_BackToLogin"
+					"text": "BACK"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn_ResetFields"
+					"text": "RESET"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "field_dobM"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_CUsername2"
+					"text": "Date of Birth (MM/DD/YYYY)"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "field_dobD"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "field_dobY"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "card2"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :::p, par l {seq {comp text_DashWelcome:::::x, space :::p, comp text_Notifications:::p:142:p}, comp panelAdmNavigation:::::x}, space :::p}, comp panelAdmDashboard::l::515:x}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp text_DashWelcome::b::27:x, comp text_Notifications::b:p::p}, space :::p, comp panelAdmDashboard:::p::p, space :::p, comp panelAdmNavigation:::p:59:p, space :::p}}"
+			} ) {
+				name: "panelPageAdmin"
+				"font": &Font0 new java.awt.Font( "Segoe UI", 0, 22 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_DashWelcome"
+					"text": "Welcome"
+					"font": &Font1 new java.awt.Font( "MS UI Gothic", 0, 18 )
+					"enabled": false
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :0:0:x, comp panelAdminTaskTable:::p::p, space :0:0:x}};par l {seq {space :0:0:x, comp panelAdminHome:::p::p, space :0:0:x}}"
+					"$verticalGroup": "par l {seq {space :0:2:x, comp panelAdminTaskTable:::p:271:p, space :0:2:x}};par l {seq {space :0:0:x, comp panelAdminHome:::p::p, space :0:0:x}}"
+				} ) {
+					name: "panelAdmDashboard"
+					"background": &SwingColor0 new com.jformdesigner.model.SwingColor( "Button.shadowColor" )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :::p, par l {comp scroll_AdminPendingTable::l::505:x, seq l {comp btn_Read:::p::p, space u:::p, comp btn_Approve:::p::p, space u:::p, comp btn_Deny:::p::p, space ::153:x, comp btn_RefreshAdminPendingTable:::p::p, space :::p}}}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp scroll_AdminPendingTable:::p:195:p, space s:::p, par b {comp btn_Read::b:p::p, comp btn_Approve::b:p::p, comp btn_RefreshAdminPendingTable::b:p::p, comp btn_Deny::b:p::p}, space :p:24:p}}"
+					} ) {
+						name: "panelAdminTaskTable"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scroll_AdminPendingTable"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table_AdminPendingTable"
+								auxiliary() {
+									"JavaCodeGenerator.preCreateCode": "String[] tableColumnNames = {\"TASK ID\", \"TASK NAME\", \"TASK STATUS\", \"USERTYPE\", \"USERNAME\", \"FIRST NAME\", \"LAST NAME\", \"DATE OF BIRTH\"};\n"
+								}
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_Read"
+							"text": "READ"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_Approve"
+							"text": "APPROVE"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_RefreshAdminPendingTable"
+							"text": "REFRESH"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_Deny"
+							"text": "DENY"
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :::p, par l {comp label_descName3:::p::p, comp text_NumAccCreate:::p:496:p, comp text_NumUsers:::p:496:p, comp label_descName2:::p::p}, space ::43:x}}"
+						"$verticalGroup": "par l {seq t {space :p:23:p, comp label_descName3:::p::p, space :6:6:p, comp text_NumAccCreate:::p:37:p, space :p:35:p, comp label_descName2:::p::p, space :::p, comp text_NumUsers:::p:37:p, space ::87:x}}"
+					} ) {
+						name: "panelAdminHome"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label_descName2"
+							"text": "Current Number of Users"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "text_NumUsers"
+							"text": "[PH]numUsers"
+							"font": &Font2 new java.awt.Font( "Segoe UI", 0, 20 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label_descName3"
+							"text": "You have:"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "text_NumAccCreate"
+							"text": "[PH]numAccCreationUsers"
+							"font": #Font2
+						} )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panelAdmNavigation"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_AdmTasks"
+						"text": "TASKS"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_AdmHome"
+						"text": "HOME"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_LogOut"
+						"text": "LOG OUT"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_Notifications"
+					"text": "0 NEW NOTIFICATIONS"
+					"horizontalAlignment": 4
+					"foreground": &Color1 new java.awt.Color( 255, 255, 153, 255 )
+					"font": &Font3 new java.awt.Font( "MS UI Gothic", 0, 12 )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "card3"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq t {space :::p, par l {seq {comp text_DashWelcomeUser:::::x, space :::p, comp text_NotificationsUser:::p:142:p}, comp panelUserNavigation:::::x}, space :::p}, comp panelUserDashboard::l::515:x}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp text_DashWelcomeUser::b::27:x, comp text_NotificationsUser::b:p::p}, space :::p, comp panelUserDashboard:::p:263:p, space :::p, comp panelUserNavigation:::p:59:p, space :::p}}"
+			} ) {
+				name: "panelPageUser"
+				"font": #Font0
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_DashWelcomeUser"
+					"text": "Welcome"
+					"font": #Font1
+					"enabled": false
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {space :0:0:x};par l {seq {space :0:0:x, comp panelUserHome:::p::p, space :0:0:x}};par l {seq l {space :::p, comp panelUserOrder:::p::p, space ::44:x}};par l {seq {space :0:0:x, comp panelUserOrderTable:::p::p, space :0:0:x}}"
+					"$verticalGroup": "par l {space :0:0:x};par l {seq {space :0:0:x, comp panelUserHome:::p::p, space :0:0:x}};par l {seq t {space ::18:x, comp panelUserOrder:::p:239:p, space :::x}};par l {seq {space :0:0:x, comp panelUserOrderTable:::p:271:p, space :0:0:x}}"
+				} ) {
+					name: "panelUserDashboard"
+					"background": #SwingColor0
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :::p, par l {comp label_NameLASTFIRST:::p:496:p, comp label_descName:::p::p, comp label_descPhys::l:p::p, comp label_PhysLASTFIRST::l:p:496:p, comp label_desc_LU::l:p::p, comp label_LU::l:p:496:p}, space ::43:x}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp label_descName:::p::p, space :::p, comp label_NameLASTFIRST:::p:37:p, space u:::p, comp label_descPhys:::p::p, space :::p, comp label_PhysLASTFIRST:::p:37:p, space :::p, comp label_desc_LU:::p::p, space :::p, comp label_LU:::p:37:p, space ::62:x}}"
+					} ) {
+						name: "panelUserHome"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label_descName"
+							"text": "Name"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label_NameLASTFIRST"
+							"text": "LAST, FIRST"
+							"font": #Font2
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label_descPhys"
+							"text": "Current Physician"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label_PhysLASTFIRST"
+							"text": "LAST, FIRST"
+							"font": #Font2
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label_desc_LU"
+							"text": "Last Update"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label_LU"
+							"text": "UPDATE_LAST"
+							"font": #Font2
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :::p, par l {seq l {par l {comp field_descOrderAddress:::p::p, seq {par l {comp field_UserOrder::l:p:242:p, comp field_descUserOrder::l:p::p}, space s:::p, par l:::p {comp label_descUserOrderCount:::::x, comp field_UserOrderCount:::::x}}}, space :::x}, seq l {comp field_UserOrderAddress:::p:242:p, space ::165:x, comp btn_UserOrder:::p::p, space :p:51:p}}}}"
+						"$verticalGroup": "par l {seq l {space :::p, par t {seq {comp field_descUserOrder:::p::p, space :::p, comp field_UserOrder:::p::p}, seq {comp label_descUserOrderCount:::p::p, space :::p, comp field_UserOrderCount:::p::p}}, space u:::p, comp field_descOrderAddress:::p::p, space :::p, par t {comp field_UserOrderAddress:::p:110:p, comp btn_UserOrder:::p::p}, space ::42:x}}"
+					} ) {
+						name: "panelUserOrder"
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "field_UserOrder"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "field_descUserOrder"
+							"text": "Order?"
+							"font": &Font4 new java.awt.Font( "Segoe UI", 0, 24 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "field_descOrderAddress"
+							"text": "Address"
+							"font": #Font4
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "field_UserOrderAddress"
+							"horizontalAlignment": 2
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_UserOrder"
+							"text": "ORDER"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "field_UserOrderCount"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label_descUserOrderCount"
+							"text": "Count"
+							"font": #Font4
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :::p, par l {comp scroll_UserOrderHistory::l::505:x, seq l {comp btn_UserSwitchRecords:::p::p, space :::p, comp btn_UserSwitchOrder:::p::p, space ::164:x, comp btn_ReadOrder:::p::p, space :::p, comp btn_RefreshUserOrder:::p::p, space :::p}}}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp scroll_UserOrderHistory:::p:195:p, space s:::p, par b {comp btn_RefreshUserOrder::b:p::p, comp btn_ReadOrder::b:p::p, comp btn_UserSwitchRecords::b:p::p, comp btn_UserSwitchOrder::b:p::p}, space :p:24:p}}"
+					} ) {
+						name: "panelUserOrderTable"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scroll_UserOrderHistory"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table_UserOrderHistory"
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_ReadOrder"
+							"text": "READ"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_RefreshUserOrder"
+							"text": "REFRESH"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_UserSwitchRecords"
+							"text": "RECORDS"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_UserSwitchOrder"
+							"text": "ORDER"
+						} )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panelUserNavigation"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_UserRecords"
+						"text": "RECORDS"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_UserNewOrder"
+						"text": "ORDER"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_UserHome"
+						"text": "HOME"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_LogOutUser"
+						"text": "LOG OUT"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_NotificationsUser"
+					"text": "0 NEW NOTIFICATIONS"
+					"horizontalAlignment": 4
+					"foreground": #Color1
+					"font": #Font3
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "card7"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {comp panelPhysDashboard::t:::x, seq t {space :::p, comp text_DashWelcomePhysician:::::x, space :::p, comp text_NotificationsPhys:::p:142:p}, comp panelPhysNav::t:::x}, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp text_DashWelcomePhysician::b::27:x, comp text_NotificationsPhys::b:p::p}, space :::p, comp panelPhysDashboard:::p:272:p, space u:::p, comp panelPhysNav:::p:56:p, space :::p}}"
+			} ) {
+				name: "panelPagePhysician"
+				"font": #Font0
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_DashWelcomePhysician"
+					"text": "Welcome"
+					"font": #Font1
+					"enabled": false
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :0:0:x, comp panelPhysHome:::p::p, space :0:0:x}};par l {seq l {space :::p, comp panelPhysManaged:::::x}}"
+					"$verticalGroup": "par l {seq {space :0:0:x, comp panelPhysHome:::p::p, space :0:0:x}};par l {seq l {space :::p, comp panelPhysManaged:::::x}}"
+				} ) {
+					name: "panelPhysDashboard"
+					"background": #SwingColor0
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {space :::p, par l {comp field_PhysWhoClient:::p:242:p, comp label_descPhysWhoClient:::p::p, comp label_descPhysLU:::p::p, comp field_PhysLU:::p:242:p, comp label_descPhysPresc:::p::p, comp field_PhysPresc:::p:242:p, comp btn_PhysUpdate::l:p::p}, space ::261:x}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp label_descPhysWhoClient:::p::p, space :::p, comp field_PhysWhoClient:::p::p, space u:::p, comp label_descPhysLU:::p::p, space :6:6:p, comp field_PhysLU:::p::p, space u:::p, comp label_descPhysPresc:::p::p, space :6:6:p, comp field_PhysPresc:::p::p, space u:::p, comp btn_PhysUpdate:::p::p, space :::x}}"
+					} ) {
+						name: "panelPhysHome"
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "field_PhysWhoClient"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label_descPhysWhoClient"
+							"text": "Who's your client?"
+							"font": #Font4
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label_descPhysLU"
+							"text": "Last Update"
+							"font": #Font4
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "field_PhysLU"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label_descPhysPresc"
+							"text": "Prescription update"
+							"font": #Font4
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "field_PhysPresc"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_PhysUpdate"
+							"text": "UPDATE"
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {space :0:503:x};par l {seq {space :0:0:x, par l {comp panelPhysTable:::p::p, comp panelPhysNavigation:::p:488:p}, space :0:0:x}}"
+						"$verticalGroup": "par l {space :0:266:x};par l {seq {space :0:0:x, comp panelPhysTable:::p::p, space :6:6:p, comp panelPhysNavigation:::p:30:p, space :0:0:x}}"
+					} ) {
+						name: "panelPhysManaged"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "panelPhysNavigation"
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "btn_PhysSwitchRecords"
+								"text": "CURRENT RECORDS"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "btn_PhysSwitchLog"
+								"text": "LOG"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "btn_ReadPhys"
+								"text": "READ"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "btn_RefreshPhys"
+								"text": "REFRESH"
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {space :0:0:x};par l {seq {space :0:0:x, comp scroll_PhysTable:::p:486:p, space :0:0:x}}"
+							"$verticalGroup": "par l {space :0:212:x};par l {seq {space :0:0:x, comp scroll_PhysTable:::p:199:p, space :0:0:x}}"
+						} ) {
+							name: "panelPhysTable"
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scroll_PhysTable"
+								add( new FormComponent( "javax.swing.JTable" ) {
+									name: "table_PhysRecords"
+								} )
+							} )
+						} )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_NotificationsPhys"
+					"text": "0 NEW NOTIFICATIONS"
+					"horizontalAlignment": 4
+					"foreground": #Color1
+					"font": #Font3
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panelPhysNav"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_PhysRecords"
+						"text": "RECORDS"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_PhysHome"
+						"text": "HOME"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_LogOutPhys"
+						"text": "LOG OUT"
+					} )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "card8"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp panelProviderDashboard::l:::x, seq t {space :::p, par l {seq {comp text_DashWelcomeProvider:::::x, space :::p, comp text_NotificationsProvider:::p:142:p}, seq {comp panelProviderNavigation:::::x, space :::p, comp panelProviderActive:::p::p}, seq t {space :0:0:x, comp btn_LogOutProvider:::p:503:p}}, space :::p}};par l {seq t {space :::x, comp panelProviderMain:::p::p, space ::355:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp text_DashWelcomeProvider::b::27:x, comp text_NotificationsProvider::b:p::p}, space :::p, comp panelProviderDashboard:::p::p, space :::p, par l {comp panelProviderNavigation:::p:59:p, comp panelProviderActive:::p::p}, space u:::p, comp btn_LogOutProvider:::p:59:p, space :::p}};par l {seq t {space ::95:x, comp panelProviderMain:::p::p, space ::95:x}}"
+			} ) {
+				name: "panelPageProvider"
+				"font": #Font0
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_DashWelcomeProvider"
+					"text": "Welcome"
+					"font": #Font1
+					"enabled": false
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {space :0:0:x}"
+					"$verticalGroup": "par l {space :0:19:x}"
+				} ) {
+					name: "panelProviderDashboard"
+					"background": #SwingColor0
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panelProviderNavigation"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "text_NotificationsProvider"
+					"text": "0 NEW NOTIFICATIONS"
+					"horizontalAlignment": 4
+					"foreground": #Color1
+					"font": #Font3
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:19:p, par l {comp btn_ProviderCompleted:::p:129:p, comp btn_ProviderActive:::p:129:p}, space :::x}}"
+					"$verticalGroup": "par l {seq l {space :p:49:p, comp btn_ProviderActive:::p:42:p, space :::x, comp btn_ProviderCompleted:::p:42:p, space :p:56:p}}"
+				} ) {
+					name: "panelProviderMain"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_ProviderActive"
+						"text": "ACTIVE"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_ProviderCompleted"
+						"text": "COMPLETED"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btn_LogOutProvider"
+					"text": "LOG OUT"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {space :0:337:x};par l {seq l {space :::p, comp scrollPane1::::325:x, space :::p}}"
+					"$verticalGroup": "par l {space :0:244:x};par l {seq l {space :::p, comp scrollPane1::::232:x, space :::p}}"
+				} ) {
+					name: "panelProviderActive"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "ProviderActiveReqTable"
+						} )
+					} )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "card9"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 5 )
+			"size": new java.awt.Dimension( 515, 385 )
+		} )
+	}
+}

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Core Functions">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/darcula.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rs2xml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.20.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/rs2xml.jar!/src" />
+    </SOURCES>
+  </library>
+</component>
